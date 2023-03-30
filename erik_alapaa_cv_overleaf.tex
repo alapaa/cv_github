@@ -4,7 +4,9 @@
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 
-% Hope this resume template helps you land an awesome job. If you found this helpful, please consider starring the github repo here, .
+% Hope this resume template helps you land an awesome job. If you found this
+% helpful, please consider starring the github repo here, .
+
 %-------------------------
 
 
@@ -12,29 +14,40 @@
 %------------PACKAGES----------------
 \documentclass[a4paper,11pt]{article}
 
-\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*" environments
+\usepackage{verbatim} % reimplements the "verbatim" and "verbatim*"
+                      % environments
 
-\usepackage{titlesec} % provides an interface to sectioning commands i.e. custom elements
+\usepackage{titlesec} % provides an interface to sectioning commands
+                      % i.e. custom elements
 
 \usepackage{color} % provides both foreground and background color management
 
-\usepackage{enumitem} % provides control over enumerate, itemize and description
+\usepackage{enumitem} % provides control over enumerate, itemize and
+                      % description
 
-\usepackage{fancyhdr} % provides extensive facilities for constructing headers, footers and also controlling their use
+\usepackage{fancyhdr} % provides extensive facilities for constructing headers,
+                      % footers and also controlling their use
 
-\usepackage{tabularx} % defines an environment tabularx, extension of "tabular" with an extra designator x, paragraph like column whose width automatically expands to fill the width of the environment
+\usepackage{tabularx} % defines an environment tabularx, extension of "tabular"
+                      % with an extra designator x, paragraph like column whose
+                      % width automatically expands to fill the width of the
+                      % environment
 
 \usepackage{latexsym} % provides mathematical symbols
 
-\usepackage{marvosym} % provides martin vogel's symbol font which contains various symbols
+\usepackage{marvosym} % provides martin vogel's symbol font which contains
+                      % various symbols
 
-\usepackage[empty]{fullpage} % sets margins to one inch and removes headers, footers etc..
+\usepackage[empty]{fullpage} % sets margins to one inch and removes headers,
+                             % footers etc..
 
 \usepackage[hidelinks]{hyperref} % removes color and shadow of hyperlinks
 
-\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
+\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break
+                            % at line breaks
 
-\usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+\usepackage[english]{babel} % provides culturally determined typographical
+                            % rules for wide range of languages
 %-----------------------------------------
 
 \input glyphtounicode % converts glyph names to unicode
@@ -42,7 +55,8 @@
 
 %----------FONT OPTIONS-------------------
 \usepackage[default]{sourcesanspro} % uses the font source sans pro
-\urlstyle{same} % changes url font from default urlfont to font being used by the document
+\urlstyle{same} % changes url font from default urlfont to font being used by
+                % the document
 %-----------------------------------------
 
 
@@ -50,10 +64,13 @@
 \pagestyle{fancy} % set page style to one configured by fancyhdr
 \fancyhf{} % clear all header and footer fields
 
-\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to zero
-\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to zero
+\renewcommand{\headrulewidth}{0in} % sets thickness of linerule under header to
+                                   % zero
+\renewcommand{\footrulewidth}{0in} % sets thickness of linerule over footer to
+                                   % zero
 
-\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to zero
+\setlength{\tabcolsep}{0in} % sets thickness of column separator in tables to
+                            % zero
 
 % origin of the document is one inch from the top and from and the left
 % oddsidemargin and evensidemargin both refer to the left margin
@@ -61,11 +78,15 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\topmargin}{-0.5in}
 
-\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one inch
-\addtolength{\textheight}{1.0in} % sets height of text area in the page to one inch
+\addtolength{\textwidth}{1.0in} % sets width of text area in the page to one
+                                % inch
+\addtolength{\textheight}{1.0in} % sets height of text area in the page to one
+                                 % inch
 
-\raggedbottom{} % makes all pages the height of current page, no extra vertical space added
-\raggedright{} % makes all pages the width of current page, no extra horizontal space added
+\raggedbottom{} % makes all pages the height of current page, no extra vertical
+                % space added
+\raggedright{} % makes all pages the width of current page, no extra horizontal
+               % space added
 %------------------------------------------
 
 
@@ -74,13 +95,11 @@
 %   [<shape>]{<format>}{<label>}{<sep>}
 %     {<before-code>}[<after-code>]
 
-% command is the sectioning command to be redefined
-% shape is the style of the font; scshape stands for small caps style
-% format is the format to be applied to whole title- label and text; absent here
-% label defines the label
-% sep is the horizontal separation between label and title body
-% before-code is the code to be executed before
-% after-code is the code to be executed after
+% command is the sectioning command to be redefined shape is the style of the
+% font; scshape stands for small caps style format is the format to be applied
+% to whole title- label and text; absent here label defines the label sep is
+% the horizontal separation between label and title body before-code is the
+% code to be executed before after-code is the code to be executed after
 
 \titleformat{\section}
   {\scshape\large}{}
@@ -98,18 +117,26 @@
 
 
 %--------CUSTOM COMMANDS--------------
-%\vspace{} defines a vertical space of given size, modifying this in custom commands can help stretch or shrink resume to remove or add content
+
+%\vspace{} defines a vertical space of given size, modifying this in custom
+%commands can help stretch or shrink resume to remove or add content
 
 % resumeItem renders a bullet point
 \newcommand{\resumeItem}[1]{
   \item\small{#1}
 }
 
-% commands to start and end itemization of resumeItem, rightmargin set to 0.11in to avoid the overflow of resumetItem beyond whatever resumeItemHeading is being used
+% commands to start and end itemization of resumeItem, rightmargin set to
+% 0.11in to avoid the overflow of resumetItem beyond whatever resumeItemHeading
+% is being used
+
 \newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=0.11in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}}
 
-% resumeSectionType renders a bolded type to be used under a section, used as skill type here, middle element is used to keep ":"s in the same vertical line
+% resumeSectionType renders a bolded type to be used under a section, used as
+% skill type here, middle element is used to keep ":"s in the same vertical
+% line
+
 \newcommand{\resumeSectionType}[3]{
   \item\begin{tabular*}{0.96\textwidth}[t]{
     p{0.15\linewidth}p{0.02\linewidth}p{0.81\linewidth}
@@ -118,7 +145,10 @@
   \end{tabular*}\vspace{-2pt}
 }
 
-% resumeTrioHeading renders three elements in three columns with second element being italicized and first element bolded, can be used for projects with three elements
+% resumeTrioHeading renders three elements in three columns with second element
+% being italicized and first element bolded, can be used for projects with
+% three elements
+
 \newcommand{\resumeTrioHeading}[3]{
   \item\small{
     \begin{tabular*}{0.96\textwidth}[t]{
@@ -129,7 +159,10 @@
   }
 }
 
-% resumeQuadHeading renders four elements in a two columns with the second row being italicized and first element of first row bolded, can be used for experience and projects with four elements
+% resumeQuadHeading renders four elements in a two columns with the second row
+% being italicized and first element of first row bolded, can be used for
+% experience and projects with four elements
+
 \newcommand{\resumeQuadHeading}[4]{
   \item
   \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -138,7 +171,9 @@
   \end{tabular*}
 }
 
-% resumeQuadHeadingChild renders the second row of resumeQuadHeading, can be used for experience if different roles in the same company need to added
+% resumeQuadHeadingChild renders the second row of resumeQuadHeading, can be
+% used for experience if different roles in the same company need to added
+
 \newcommand{\resumeQuadHeadingChild}[2]{
   \item
   \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -146,7 +181,9 @@
   \end{tabular*}
 }
 
-% commands to start and end itemization of resumeQuadHeading, lefmargin for left indent of 0.15in for resumeItems
+% commands to start and end itemization of resumeQuadHeading, lefmargin for
+% left indent of 0.15in for resumeItems
+
 \newcommand{\resumeHeadingListStart}{
   \begin{itemize}[leftmargin=0.15in, label={}]
 }
@@ -159,27 +196,39 @@
 \begin{document}
 
 %-----------CONTACT DETAILS------------------
-% Make sure all the details are correct, you can add more links in the first row of second column if needed
+% Make sure all the details are correct, you can add more links in the first
+% row of second column if needed
+
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Huge Erik Alapää \vspace{2pt}} & % row = 1, col = 1
   Location: Zurich, Switzerland \\ % row = 1, col = 2
-  \href{https://linkedin.com/in/alapaa/}{\uline{linkedin.com/in/alapaa/}} $|$ % row = 2, col = 1
-  Email: \href{mailto:erik.alapaa@gmail.com}{\uline{erik.alapaa@gmail.com}} $|$ % row = 2, col = 2
+
+  \href{https://linkedin.com/in/alapaa/}{\uline{linkedin.com/in/alapaa/}}
+  $|$ % row = 2, col = 1
+
+  Email: \href{mailto:erik.alapaa@gmail.com}{\uline{erik.alapaa@gmail.com}}
+  $|$ % row = 2, col = 2
+
   Mobile: +41 77 265 14 66 \\ % row = 2, col = 2
 \end{tabular*}
 %--------------------------------------------
 
 
 %-----------SUMMARY--------------------------
+
 % Keep this short, simple and straigth to point
 
 \section{Hands-on, research-trained tech lead and near-metal C++ expert at Google}
-\small{
-  Borg(*) SRE. Specialist in Unix and hard real-time C/C++ at Google. Research degree (Licentiate) in Applied Mathematics from Chalmers, Gothenburg. M.Sc. in Engineering Physics from Luleå University of Technology. +20 years of industry experience, mostly on \textbf{near-metal programming in C and C++}. Worked on everything from \textbf{192k RAM} embedded controllers up to Google's world-scale infrastructure.
+\small{ Borg(*) SRE. Specialist in Unix and hard real-time C/C++ at
+  Google. Research degree (Licentiate) in Applied Mathematics from Chalmers,
+  Gothenburg. M.Sc. in Engineering Physics from Luleå University of
+  Technology. +20 years of industry experience, mostly on \textbf{near-metal
+    programming in C and C++}. Worked on everything from \textbf{192k RAM}
+  embedded controllers up to Google's world-scale infrastructure.
 
-  (*) \emph{Borg is the cluster operating system that controls all Google datacenters and runs almost all infrastructure at Google.}
-}
+  (*) \emph{Borg is the cluster operating system that controls all Google
+  datacenters and runs almost all infrastructure at Google.}  }
 %--------------------------------------------
 
 
@@ -187,19 +236,28 @@
 % Add or remove resumeSectionTypes according to your needs
 
 \section{Technical Skills}
-  \resumeHeadingListStart{}
+\resumeHeadingListStart{}
+
     \resumeSectionType{Languages}{:}{C++, C, Python}
     \resumeSectionType{Databases}{:}{Google Cloud BigQuery}
-    \resumeSectionType{Dev Tools}{:}{Clang, GCC, GDB, Git, Valgrind, Clang Thread Safety Analysis, Compiler Explorer (godbolt.org)}
-    \resumeSectionType{Frameworks}{:}{Boost Graph Library, Pthreads, Google Protobuf, Google Abseil C++ Common Libraries}
-  \resumeHeadingListEnd{}
+    \resumeSectionType{Dev Tools}{:}{Clang, GCC, GDB, Git, Valgrind, Clang
+      Thread Safety Analysis, Compiler Explorer (godbolt.org)}
+    \resumeSectionType{Frameworks}{:}{Boost Graph Library, Pthreads, Google
+      Protobuf, Google Abseil C++ Common Libraries}
+
+\resumeHeadingListEnd{}
 %--------------------------------------------
 
 
 %-----------EXPERIENCE-----------------------
-% Distill all your talking points to small bullet points which follow the pattern "challenge-action-result" for maximum efficiency. Try to quantify (use numbers) your points whenver possible, highlist words of importance
 
-\section{Career highlights, examples of my expertise (full history at linkedin.com/in/alapaa/)}
+% Distill all your talking points to small bullet points which follow the
+% pattern "challenge-action-result" for maximum efficiency. Try to quantify
+% (use numbers) your points whenver possible, highlist words of importance
+
+\section{
+  Career highlights, examples of my expertise
+  (full history at linkedin.com/in/alapaa/)}
 \resumeHeadingListStart{}
 
    \resumeQuadHeading{SRE, Borg Cluster Operating System}{Feb 2019 -- Present}
@@ -210,50 +268,120 @@
        Google Edge clusters in Q1 2021, dramatically improving the sharding,
        redundancy and reliability of Google's Edge cluster network.}
 
-     \resumeItem{As the \textbf{Edge cluster turnup lead} of a small team of SREs developed and deployed improved automation that \textbf{entirely removed cluster controller machine management toil and costs} (by moving to a model where cluster controllers do not need dedicated machines).}
+     \resumeItem{As the \textbf{Edge cluster turnup lead} of a small team of
+       SREs developed and deployed improved automation that \textbf{entirely
+         removed cluster controller machine management toil and costs} (by
+       moving to a model where cluster controllers do not need dedicated
+       machines).}
+
      \resumeItem{Designed and implemented a solution for turndown cleanup in
        the Aristotle C++ machine management system. This saved Google very
        large amounts of money by not blocking subsequent large cluster turnups,
        and also eliminated hours of toil every week for me and other oncallers
        in the SRE team. I also designed safety checks preventing the cleanup to
        be run on production cells, which could have caused large outages.}
-     \resumeItem{Modified handling of open-source Protocol Buffer extension code (C++), saving a couple of bytes per message. This \textbf{saved 3 TB of RAM across the Google datacenter fleet}.}
-     \resumeItem{\textbf{Taught all 3 Google C++ courses} to hundreds of Google engineers during 2021-2023.}
+
+     \resumeItem{Modified handling of open-source Protocol Buffer extension
+       code (C++), saving a couple of bytes per message. This \textbf{saved 3
+         TB of RAM across the Google datacenter fleet}.}
+
+     \resumeItem{\textbf{Taught all 3 Google C++ courses} to hundreds of Google
+       engineers during 2021-2023.}
+
     \resumeItemListEnd{}
 
 \resumeQuadHeading{TSE, Technical Solutions Engineer}{Aug 2017 -- Jan 2019}
   {Google}{Zurich, Switzerland}
-    \resumeItemListStart{}
-      \resumeItem{3rd line expert support of Google Cloud Big Data products (e.g. BigQuery, Dataflow, Pub/Sub, Tensorflow)}.
-      \resumeItem{Specializing in the architecture of \href{https://panoply.io/data-warehouse-guide/bigquery-architecture/}{\uline{BigQuery (Dremel)}}, perhaps the world's fastest mostly-read SQL database, handling \textbf{terabytes} of queries in seconds.}
-      \resumeItem{Worked with premium customers, developers and SRE to \textbf{debug the C++ shuffler part of the database engine}, solving slowdowns and failures of large queries and speeding up query execution by a factor of \textbf{10-20 times}.}
-    \resumeItemListEnd{}
+  \resumeItemListStart{}
+
+      \resumeItem{3rd line expert support of Google Cloud Big Data products
+        (e.g. BigQuery, Dataflow, Pub/Sub, Tensorflow)}.
+
+      \resumeItem{Specializing in the architecture of \href{
+          https://panoply.io/data-warehouse-guide/bigquery-architecture/}{
+          \uline{BigQuery (Dremel)}}, perhaps the world's fastest mostly-read
+        SQL database, handling \textbf{terabytes} of queries in seconds.}
+
+      \resumeItem{Worked with premium customers, developers and SRE to
+        \textbf{debug the C++ shuffler part of the database engine}, solving
+        slowdowns and failures of large queries and speeding up query execution
+        by a factor of \textbf{10-20 times}.}
+
+      \resumeItemListEnd{}
 
 \resumeQuadHeading{C and C++ SW developer, tech lead}{Jan 2014 -- Jun 2017}
   {Netrounds}{Luleå, Sweden}    %
-    \resumeItemListStart{}
-      \resumeItem{Occasional \textbf{Linux kernel patches} in CPE:s (home routers/WiFi access points).} One prominent example was when I added support to the Broadcom kernel and user-space API for tapping the built in layer 2 hardware (the switch), making packets visible to the host kernel. This enabled our measurement software to access the packets in user-space.
-      \resumeItem{Research and hands-on development in C++ of hardware timestamping of network packets, \textbf{improving accuracy and precision of measurements by a factor of 1000}. I did all the research, wrote the requirements specification and wrote the time-critical core measurement functions and also lead a small team of developers in this effort.}
-      \resumeItem{Extensive study of the Linux kernel networking code, for example to \textbf{understand the path MTU detection logic} and use it fully in our custom IP measurement software.}
-      \resumeItem{Developed a solution using SR-IOV for \textbf{near bare metal latency RTT measurements} by mapping the hardware queues of a network interface card directly to a virtual machine, bypassing the host kernel.}
+  \resumeItemListStart{}
+
+      \resumeItem{Occasional \textbf{Linux kernel patches} in CPE:s (home
+        routers/WiFi access points).} One prominent example was when I added
+      support to the Broadcom kernel and user-space API for tapping the built
+      in layer 2 hardware (the switch), making packets visible to the host
+      kernel. This enabled our measurement software to access the packets in
+      user-space.
+
+      \resumeItem{Research and hands-on development in C++ of hardware
+        timestamping of network packets, \textbf{improving accuracy and
+          precision of measurements by a factor of 1000}. I did all the
+        research, wrote the requirements specification and wrote the
+        time-critical core measurement functions and also lead a small team of
+        developers in this effort.}
+
+      \resumeItem{Extensive study of the Linux kernel networking code, for
+        example to \textbf{understand the path MTU detection logic} and use it
+        fully in our custom IP measurement software.}
+
+      \resumeItem{Developed a solution using SR-IOV for \textbf{near bare metal
+          latency RTT measurements} by mapping the hardware queues of a network
+        interface card directly to a virtual machine, bypassing the host
+        kernel.}
+
     \resumeItemListEnd{}
 
 \resumeQuadHeading{C++ SW developer, consultant}{2012-2013}
   {Ericsson}{Stockholm, Sweden}
     \resumeItemListStart{}
-      \resumeItem{\textbf{Advanced debugging of multi-threaded software} in the mobile base station radio software. (Pthreads and OSE RTOS processes)}. One example was finding an initialization bug caused by an older C++ compiler not emitting locks around static initialization at the startup of the system.
-      \resumeItem{C++ development in an extremely constrained \textbf{hard real-time} environment, \textbf{64K data RAM and 128k instruction RAM}, the system for linearization in the mobile radio base station transmitter}. Using my research background to interact with mathematicians and signal processing experts to realize the implementation. Working hands-on in the lab verifying the implementation directly on the target RISC CPU.
+
+      \resumeItem{\textbf{Advanced debugging of multi-threaded software} in the
+        mobile base station radio software. (Pthreads and OSE RTOS
+        processes)}. One example was finding an initialization bug caused by an
+      older C++ compiler not emitting locks around static initialization at the
+      startup of the system.
+
+      \resumeItem{C++ development in an extremely constrained \textbf{hard
+          real-time} environment, \textbf{64K data RAM and 128k instruction
+          RAM}, the system for linearization in the mobile radio base station
+        transmitter}. Using my research background to interact with
+      mathematicians and signal processing experts to realize the
+      implementation. Working hands-on in the lab verifying the implementation
+      directly on the target RISC CPU.
+
     \resumeItemListEnd{}
 
 \resumeQuadHeading{Tech lead, SW developer (pure C), consultant}{2010-2011}
   {Combitech/Ericsson}{Stockholm, Sweden}
-    \resumeItemListStart{}
-     \resumeItem{Shared tech lead of a project to develop a distributed, scalable, telecom-grade load balancer using the built-in Linux kernel load balancer for \textbf{+50 million connections},} including termination of hardware-encrypted IPSec connections. %
-     \resumeItem{I wrote the requirements specification for the \textbf{Fault Tolerance and High Availability} design of the load balancer system.}
-     \resumeItem{\textbf{Developed a coroutines solution in C} for the control plane of the load balancer to avoid spawning new threads when operators logged in to configure the system using a Cisco-style router CLI.}
-     \resumeItem{Worked with Ericsson legal experts on \textbf{open-source licensing} to deploy the coroutines solution.}
-     \resumeItem{The load balancer project contributed fixes to the then-new \textbf{Linux kernel container/network namespace code} (for example fixing issues in the VETH interface logic), and most prominently,  the HMARK patch in the kernel firewall (Netfilter) code that is foundational for load balancing in Linux.}
-    \resumeItemListEnd{}
+  \resumeItemListStart{}
+
+      \resumeItem{Shared tech lead of a project to develop a distributed,
+        scalable, telecom-grade load balancer using the built-in Linux kernel
+        load balancer for \textbf{+50 million connections},} including
+      termination of hardware-encrypted IPSec connections.
+
+      \resumeItem{I wrote the requirements specification for the \textbf{Fault
+          Tolerance and High Availability} design of the load balancer system.}
+
+      \resumeItem{\textbf{Developed a coroutines solution in C} for the control
+        plane of the load balancer to avoid spawning new threads when operators
+        logged in to configure the system using a Cisco-style router CLI.}
+
+      \resumeItem{Worked with Ericsson legal experts on \textbf{open-source
+          licensing} to deploy the coroutines solution.}
+
+      \resumeItem{The load balancer project contributed fixes to the then-new
+        \textbf{Linux kernel container/network namespace code} (for example
+        fixing issues in the VETH interface logic), and most prominently, the
+        HMARK patch in the kernel firewall (Netfilter) code that is
+        foundational for load balancing in Linux.}  \resumeItemListEnd{}
 
 \resumeHeadingListEnd{}
 %---------------------------------------------
@@ -263,20 +391,32 @@
 % Mention your CGPA, if its good, in the first row of second column
 
 \section{Education}
-  \resumeHeadingListStart{}
-    \resumeQuadHeading{Chalmers University of Technology}{Gothenburg, Sweden}{Licentiate \textbf{(research degree) in Applied Mathematics}. Specialization in wavelets and Fourier analysis.}{Aug 1999 -- Nov 2004}
+  \resumeHeadingListStart{} \resumeQuadHeading{Chalmers University of
+    Technology}{Gothenburg, Sweden}{Licentiate \textbf{(research degree) in
+      Applied Mathematics}. Specialization in wavelets and Fourier
+    analysis.}{Aug 1999 -- Nov 2004}
 
-    \href{https://research.chalmers.se/en/publication/94396}{\uline{Thesis}} on partial differential equations and error-correcting codes for efficient transmission of multimedia over 4G mobile radio (Ericsson Resarch), implemented in C++.
-    \resumeQuadHeading{Luleå Technical University}{Luleå, Sweden}
-    {Master of Science in Engineering Physics, specializing in Applied Mathematics}{Aug 1993 -- Aug 1999}
+    \href{https://research.chalmers.se/en/publication/94396}{\uline{Thesis}} on
+    partial differential equations and error-correcting codes for efficient
+    transmission of multimedia over 4G mobile radio (Ericsson Resarch),
+    implemented in C++.
 
-    \href{https://ltu.diva-portal.org/smash/get/diva2:1032007/FULLTEXT01.pdf} {\uline{Thesis}} on surface reconstruction using laser-scanned point cloud samples, implemented in C++.
-  \resumeHeadingListEnd{}
+    \resumeQuadHeading{Luleå Technical University}{Luleå, Sweden} {Master of
+      Science in Engineering Physics, specializing in Applied Mathematics}{Aug
+      1993 -- Aug 1999}
+
+    \href{https://ltu.diva-portal.org/smash/get/diva2:1032007/FULLTEXT01.pdf}
+         {\uline{Thesis}} on surface reconstruction using laser-scanned point
+         cloud samples, implemented in C++.  \resumeHeadingListEnd{}
 %---------------------------------------------
 
 
 %-----------PROJECTS--------------------------
-% Use resumeQuadHeading if four elements are feasible (ex: demo video link), else use resumeTrioHeading. Keep the bullet points simple and concise and try to cover wide variety of skills you have used to build these projects
+
+% Use resumeQuadHeading if four elements are feasible (ex: demo video link),
+% else use resumeTrioHeading. Keep the bullet points simple and concise and try
+% to cover wide variety of skills you have used to build these projects
+
 %--------------------------------------------
 
 
@@ -284,19 +424,37 @@
 % You can add your acheivements, accolades, certifications etc. here.
 
 \section{Certifications}
-  \resumeItemListStart{}
-    \resumeItem{\textbf{C++ master level, Brainbench}.}
-    \resumeItem{Achieved Google C++ readability, allowing me to submit changelists without separate readability review.}
+\resumeItemListStart{}
+
+
+  \resumeItem{\textbf{C++ master level, Brainbench}.}
+
+  \resumeItem{Achieved Google C++ readability, allowing me to submit
+    changelists without separate readability review.}
+
   \resumeItemListEnd{}
 
 \section{Additional information}
-  \resumeItemListStart{}
-    \resumeItem{Nationality: Swedish, lived in Switzerland the last 6 years with my wife and 9-year old son. Grew up above the Arctic Circle.}
-    \resumeItem{Got my first computer, \href{https://en.wikipedia.org/wiki/ABC_80}{\uline{Electrolux ABC 80}}, in 1982. \textbf{Started writing M68K assembler on my Amiga 500 1988}. First full-time position as SW developer at ABB Signal, Stockholm 1992, developing fail-safe hard real-time systems for trains. Started learning and using C++ professionally 1993.}
-    \resumeItem{\textbf{Six languages}: Swedish (native), English (excellent), Russian (fluent spoken Russian), German (very good understanding, only rudimentary spoken German), Finnish (very basic), French (very basic)}
-    \resumeItem{Interests: Political economy, economic history, technical history, energy technology including solar, nuclear and hydrogen storage. Avid e-biker.}
-  \resumeItemListEnd{}
+\resumeItemListStart{}
+
+    \resumeItem{Nationality: Swedish, lived in Switzerland the last 6 years
+      with my wife and 9-year old son. Grew up above the Arctic Circle.}
+
+    \resumeItem{Got my first computer,
+      \href{https://en.wikipedia.org/wiki/ABC_80}{\uline{Electrolux ABC 80}},
+      in 1982. \textbf{Started writing M68K assembler on my Amiga 500
+        1988}. First full-time position as SW developer at ABB Signal,
+      Stockholm 1992, developing fail-safe hard real-time systems for
+      trains. Started learning and using C++ professionally 1993.}
+
+    \resumeItem{\textbf{Six languages}: Swedish (native), English (excellent),
+      Russian (fluent spoken Russian), German (very good understanding, only
+      rudimentary spoken German), Finnish (very basic), French (very basic)}
+
+    \resumeItem{Interests: Political economy, economic history, technical
+      history, energy technology including solar, nuclear and hydrogen
+      storage. Avid e-biker.}  \resumeItemListEnd{}
 
 %--------------------------------------------
-CV written in LaTeX and produced at Overleaf.com.
+CV written LaTeX, template from Overleaf.com.
 \end{document}
