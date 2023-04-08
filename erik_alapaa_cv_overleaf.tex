@@ -221,8 +221,8 @@
 
 \section{Hands-on, research-trained tech lead, software developer and
   near-metal C++ expert at Google}
-\small{ Software developer in Borg(*) SRE. Specialist in Unix and hard
-  real-time C/C++ at Google. Research degree (Licentiate) in Applied
+\small{ Software developer in Borg(*) SRE at Google. Specialist in Unix and hard
+  real-time C/C++. Research degree (Licentiate) in Applied
   Mathematics from Chalmers, Gothenburg. M.Sc. in Engineering Physics from
   Luleå University of Technology. +20 years of industry experience, mostly on
   \textbf{near-metal programming in C and C++}. Worked on everything from
@@ -243,7 +243,8 @@
 
     \resumeSectionType{Languages}{:}{C++, C, Python}
     \resumeSectionType{Databases}{:}{Google Cloud BigQuery}
-    \resumeSectionType{Dev Tools}{:}{Clang, GCC, GDB, Git, Valgrind, Clang
+    \resumeSectionType{Dev Tools}{:}{Clang, GCC, GDB, Git, Valgrind (Memcheck,
+      Cachegrind, Callgrind, Helgrind), Clang
       Thread Safety Analysis, Compiler Explorer (godbolt.org)}
     \resumeSectionType{Frameworks}{:}{Boost Graph Library, Pthreads, Google
       Protobuf (open source), Google Abseil C++ Common Libraries (open source)}
@@ -267,9 +268,11 @@
    {Google}{Zurich, Switzerland}
    \resumeItemListStart{}
 
-     \resumeItem{Single-handedly developed Python automation and turned up 50
-       Google Edge clusters in Q1 2021, dramatically improving the sharding,
-       redundancy and reliability of Google's Edge cluster network.}
+     \resumeItem{Single-handedly developed automation for the machine
+       management part of Borg turnup, removing a very time-consuming process
+       for my team's oncallers. Turned up 50 Google Edge clusters in Q1 2021,
+       dramatically improving the sharding, redundancy and reliability of
+       Google's Edge cluster network.}
 
      \resumeItem{As the \textbf{Edge cluster turnup lead} of a small team of
        SREs developed and deployed improved automation that \textbf{entirely
@@ -278,15 +281,17 @@
        machines).}
 
      \resumeItem{Designed and implemented a solution for turndown cleanup in
-       the Aristotle C++ machine management system. This saved Google very
-       large amounts of money by not blocking subsequent large cluster turnups,
-       and also eliminated hours of toil every week for me and other oncallers
-       in the SRE team. I also designed safety checks preventing the cleanup to
-       be run on production cells, which could have caused large outages.}
+       the Aristotle (C++ based) machine management system. This saved Google
+       very large amounts of money by not blocking subsequent large cluster
+       turnups, and also eliminated hours of toil every week for me and other
+       oncallers in the SRE team. I also designed safety checks preventing the
+       cleanup to be run on production cells, which could have caused large
+       outages.}
 
-     \resumeItem{Modified handling of open-source Protocol Buffer extension
-       code (C++), saving a couple of bytes per message. This \textbf{saved 3
-         TB of RAM across the Google datacenter fleet}.}
+     \resumeItem{Modified handling of open-source Protocol Buffer
+       \href{https://github.com/protocolbuffers/protobuf/commit/562fc946c748d0ddb451ad1ce48570685f23a4f1}
+       {\uline{extension code}} (C++), saving a couple of bytes per message. This
+       \textbf{saved 3 TB of RAM across the Google datacenter fleet}.}
 
      \resumeItem{\textbf{Taught all 3 Google C++ courses} to hundreds of Google
        engineers during 2021-2023.}
@@ -300,10 +305,10 @@
       \resumeItem{3rd line expert support of Google Cloud Big Data products
         (e.g. BigQuery, Dataflow, Pub/Sub, Tensorflow)}.
 
-      \resumeItem{Specializing in the architecture of \href{
-          https://panoply.io/data-warehouse-guide/bigquery-architecture/}{
-          \uline{BigQuery (Dremel)}}, perhaps the world's fastest mostly-read
-        SQL database, handling \textbf{terabytes} of queries in seconds.}
+      \resumeItem{Specializing in the architecture of
+        \href{https://panoply.io/data-warehouse-guide/bigquery-architecture}{\uline{BigQuery}},
+        an extremely fast, mostly-read SQL database, handling
+        \textbf{terabytes} of queries in seconds.}
 
       \resumeItem{Worked with premium customers, developers and SRE to
         \textbf{debug the C++ shuffler part of the database engine}, solving
@@ -459,5 +464,4 @@
       storage. Avid e-biker.}  \resumeItemListEnd{}
 
 %--------------------------------------------
-CV written LaTeX, template from Overleaf.com.
 \end{document}
